@@ -1,7 +1,17 @@
-[project]
+[tool.poetry]
 name = "kpi"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+description = ""
+authors = ["you@example.com"]
+# Add this line:
+packages = []
+
+[tool.poetry.package]
+include = "main.py"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.30.0"
+pandas = "^2.1.4"
+altair = "^5.2.0"
+
